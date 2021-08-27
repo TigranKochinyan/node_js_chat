@@ -70,7 +70,6 @@ router.get('/:id', async (req, res) => {
 // FOLLOW USER
 
 router.put('/:id/follow', async (req, res) => {
-	console.log('usersIds', req.body.userId, req.params.id );
 	if(req.body.userId !== req.params.id) {
 		try {
 			const user = await User.findById(req.params.id);
@@ -88,7 +87,7 @@ router.put('/:id/follow', async (req, res) => {
 			res.status(500).json(err);
 		}
 	} else {
-		res.status(403).json('you cant follow yourself')
+		res.status(403).json('you cant follow yourself');
 	}
 });
 // UNFOLLOW USER

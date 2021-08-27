@@ -1,0 +1,16 @@
+.sidebar-wrapper_friendsList-item {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  &_img {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  &_name {
+    
+  }
+}
