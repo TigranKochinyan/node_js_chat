@@ -29,4 +29,39 @@
       list-style: none;
     }
   }
+  &Title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  &Info {
+    margin-bottom: 30px;
+    &Item {
+      margin-bottom: 10px;
+      &Key {
+        margin-right: 10px;
+        color: #555;
+        font-weight: 600;
+      }
+      &Value {
+        font-weight: 300;
+      }
+    }
+  }
+  &Followings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      .following-img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+  }
 }

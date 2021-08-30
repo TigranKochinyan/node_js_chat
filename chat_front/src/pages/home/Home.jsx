@@ -11,7 +11,7 @@ const Home = () => {
       <div className="home-continer">
        <Sidebar />
        <Feed />
-       <Rightbar />
+       <Rightbar profile />
       </div>
     </div>
   )
