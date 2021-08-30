@@ -3,13 +3,15 @@ import OnlineFriends from '../OnlineFriends/OnlineFriends';
 import { Users } from '../../testData';
 
 const Rightbar = ({ profile }) => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   const HomeRightbar = () => {
     return (
       <>
         <div className="rightbar-wrapper_continer">
           <img
             className="rightbar-wrapper_continer-img"
-            src="/assets/gift.png"
+            src={`${PF}gift.png`}
             alt=""
           />
           <span className="rightbar-wrapper_continer-text">
@@ -19,7 +21,7 @@ const Rightbar = ({ profile }) => {
             have a birthday.
           </span>
         </div>
-        <img className="rightbar-wrapper_img" src="/assets/ad.png" alt="" />
+        <img className="rightbar-wrapper_img" src={`${PF}ad.png`} alt="" />
         <h4 className="rightbar-wrapper_title">Online Friends</h4>
         <ul className="rightbar-wrapper_list">
           {

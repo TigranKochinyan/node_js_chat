@@ -1,12 +1,13 @@
 import React from 'react';
 import './navbar.scss';
 import { Search, Person, Chat, Notifications } from '@material-ui/icons';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="navbarContainer">
       <div className="navbarContainer_left">
-        <span className="navbarContainer_left-logo">Social App</span>
+        <Link to="/" className="navbarContainer_left-logo">Social App</Link>
       </div>
       <div className="navbarContainer_center">
         <div className="navbarContainer_center-searchBar">
@@ -16,7 +17,7 @@ const Navbar = () => {
       </div>
       <div className="navbarContainer_right">
         <div className="navbarContainer_right-links">
-          <span className="navbarContainer_right-links_link">Homepage</span>
+          <NavLink to="/" className="navbarContainer_right-links_link">Homepage</NavLink>
           <span className="navbarContainer_right-links_link">Timeline</span>
         </div>
         <div className="navbarContainer_right-icons">

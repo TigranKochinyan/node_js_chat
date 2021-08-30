@@ -5,6 +5,8 @@ import Rightbar from '../../components/Rightbar';
 import './profile.scss';
 
 const Profile = () => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  
   return (
     <div className="profile">
       <Navbar />
@@ -15,12 +17,12 @@ const Profile = () => {
             <div className="profile-container_right-top_cover">
               <img
                 className="profile-container_right-top_coverPic"
-                src="/assets/post/3.jpeg"
+                src={`${PF}post/3.jpeg`}
                 alt=""
               />
               <img
                 className="profile-container_right-top_profilePic"
-                src="/assets/person/7.jpeg"
+                src={`${PF}person/7.jpeg`}
                 alt=""
               />
               <div className="profile-container_right-top_cover-info">
@@ -31,7 +33,7 @@ const Profile = () => {
           </div>
           <div className="profile-container_right-bottom">
             <Feed />
-            <Rightbar />
+            <Rightbar profile />
           </div>
        </div>
       </div>
